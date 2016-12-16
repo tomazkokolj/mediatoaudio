@@ -1,6 +1,6 @@
 # Media to Audio
 
-This script convetrs any mediaformat to ogg (or mp3) audio using ffmpeg. It was written to solve two problems:
+This script convetrs any media format to ogg (or mp3) audio using ffmpeg. It was written to solve two problems:
 * Include files from subdirectories using standard linux utils.
 * Convert multiple files at once using multiprocessing.
 
