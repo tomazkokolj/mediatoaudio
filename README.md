@@ -11,9 +11,9 @@ Use: find [ARGUMENTS] ... | mediatoaudio.py [ARGUMENTS] ...
 mediatoaudio.py uses standard input to convert files with ffmpeg.
 
 Arguments:
- -c\taudio codec\t\togg or mp3 (default: ogg)
- -d\tdelete source files\tyes or y (default: no)
- -q\taudio quality\t\t0 to 9 - see ffmpeg options (default: 4)
+ -c    audio codec            ogg or mp3 (default: ogg)
+ -d    delete source files    yes or y (default: no)
+ -q    audio quality          0 to 9 - see ffmpeg options (default: 4)
 
 Examples:
  find . -name "*.mp4" | mediatoaudio.py  # default arguments
