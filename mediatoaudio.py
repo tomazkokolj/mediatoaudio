@@ -41,7 +41,7 @@ def map_arguments():
     }
     args = sys.argv[:]
     args.pop(0)
-    while len(args) != 0:
+    while len(args) > 1:
         if args[0] == '-c' and re.search('^mp3$|^ogg$', args[1]) or \
             args[0] == '-d' and re.search('^y(es)?$', args[1]) or \
             args[0] == '-q' and re.search('^[0-9]$', args[1]):
@@ -50,6 +50,8 @@ def map_arguments():
             args.pop(0)
         else:
             print_help()
+    if len(args) == 1:
+        print_help()
     return arguments
 
 def audio_codec():
